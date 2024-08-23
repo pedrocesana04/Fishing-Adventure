@@ -12,13 +12,8 @@ namespace FishingAdventureService
         public string Ubicacion { get; set; }
         public int Duarcion { get; set; }
         public int Precio { get; set; }
-        public List<EquipoPesca> EquiposDePesca { get; set; }
-        public Excursion()
-        {
-            EquiposDePesca = new List<EquipoPesca>();
-        }
-
-        public virtual string ObtenerDescripcion()
+        public int CodigoBarco {  get; set; }
+        public virtual string ObtenerDescripcion(Embarcacion barco)
         {
             return $"Ubicacion: [{Ubicacion}]";
         }
