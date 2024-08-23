@@ -13,7 +13,7 @@ namespace FishingAdventureService
 
         public override string ObtenerDescripcion()
         {
-            return base.ObtenerDescripcion() + $" - Tipo de excursión: [Excursión en el lago.] - ";
+            return base.ObtenerDescripcion() + $" - Tipo de excursión: [Excursión en el lago.] - Tipo de embarcación: ";
         }
     }
 }
